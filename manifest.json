@@ -14,7 +14,7 @@
       "optional": []
     }
   }
-}
+},
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
@@ -27,3 +27,4 @@
     "Sounds/elden-ring-death.mp3"
   ]
 }
+
