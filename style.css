@@ -1,0 +1,40 @@
+/* Minimal Elden Ring style black bar */
+.god-felled-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 20%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 18px 28px;
+  background: rgba(0,0,0,0.95);
+  color: #fff;
+  font-family: "Segoe UI", Roboto, system-ui, -apple-system, "Helvetica Neue", Arial;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 40px;
+  border-radius: 6px;
+  box-shadow: 0 6px 30px rgba(0,0,0,0.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 280ms ease, transform 280ms ease;
+  z-index: 2147483647; /* highest safe z-index */
+}
+
+.god-felled-bar.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.god-felled-subtext {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 6px;
+  letter-spacing: 0.6px;
+  opacity: 0.85;
+  text-transform: none;
+  font-weight: 600;
+}
